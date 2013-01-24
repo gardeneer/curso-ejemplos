@@ -2,6 +2,11 @@ package net.icolino.ejemplos.clasesgenericas;
 
 import java.util.List;
 
+/**
+ * Clase que implementa el algoritmo de ordenación de Burbuja
+ * @author Ignacio Colino Cortizo
+ * @param <T> tipo de parámetro que extiende a comparable
+ */
 public class OrdenacionBurbuja<T extends Comparable<T>> extends OrdenacionGenerica<T> {
 
 	@Override
@@ -18,5 +23,4 @@ public class OrdenacionBurbuja<T extends Comparable<T>> extends OrdenacionGeneri
 		}
 		return lista;
 	}
-
 }

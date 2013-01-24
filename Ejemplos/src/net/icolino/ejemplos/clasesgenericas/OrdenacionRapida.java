@@ -3,8 +3,14 @@ package net.icolino.ejemplos.clasesgenericas;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Clase que implementa el algoritmo de ordenación rápido (QuickSort)
+ * @author Ignacio Colino Cortizo
+ * @param <T> tipo de parámetro que extiende a comparable
+ */
 public class OrdenacionRapida<T extends Comparable<T>> extends OrdenacionGenerica<T> {
 
+	@Override
 	public List<T> ordenar(List<T> lista) {
 		int total = lista.size();
 		List<T> sublista1;
